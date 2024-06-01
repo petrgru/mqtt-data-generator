@@ -1,0 +1,22 @@
+{
+    "local": {
+        "mqtt.server": "localhost",
+        "mqtt.port": 1883,
+        "mqtt.client.id": "mqtt-client-1",
+        "mqtt.topic": "test",
+        "mqtt.require.login": false,
+        "mqtt.user": "",
+        "mqtt.pass": "",
+        "mqtt.tls": false
+    },
+    "remote": {
+        "mqtt.server": "<remote_broker_host>",
+        "mqtt.port": 8883,
+        "mqtt.client.id": "<remote_client_id>",
+        "mqtt.topic": "<remote_topic>",
+        "mqtt.require.login": true,
+        "mqtt.user": "<remote_user>",
+        "mqtt.pass": "<remote_pass>",
+        "mqtt.tls": true
+    }
+}
