@@ -1,6 +1,7 @@
 # for pernament running
 
 docker compose build
+
 docker compose up
 
 listen on localhost 1883
