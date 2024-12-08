@@ -45,10 +45,12 @@ def main():
     topic = MQTT_TOPIC
 
     try:
-        for sensor in sensors:
-            result = client.publish(topic, json.dumps(sensor).encode('utf-8'))
-            print(f"Published with result: {result} \n{sensor}")
-            time.sleep(1)  
+        while True:
+            for sensor in sensors:
+                result = client.publish(topic, json.dumps(sensor).encode('utf-8'))
+                print(f"Published with result: {result} \n{sensor}")
+                time.sleep(2)
+            sensors = generate_sensor_data(100)              
     except KeyboardInterrupt:
         pass  
     finally:

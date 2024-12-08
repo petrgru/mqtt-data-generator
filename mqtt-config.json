@@ -1,6 +1,6 @@
 {
     "local": {
-        "mqtt.server": "localhost",
+        "mqtt.server": "mosquitto",
         "mqtt.port": 1883,
         "mqtt.client.id": "mqtt-client-1",
         "mqtt.topic": "test",

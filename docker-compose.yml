@@ -13,7 +13,15 @@ services:
             #- ./mosquitto/log:/mosquitto/log
         networks:
             - mqtt-network
-
+    mqtt-data-generator:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: mqtt-data-generator
+        depends_on:
+            - mosquitto
+        networks:
+            - mqtt-network
 networks:
     mqtt-network:
         driver: bridge
