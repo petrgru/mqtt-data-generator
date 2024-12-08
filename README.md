@@ -1,3 +1,11 @@
+# for pernament running
+
+docker compose build
+docker compose up
+
+listen on localhost 1883
+
+
 # MQTT Data Generator
 This is a simple self-contained MQTT solution designed to generate randomized sample data and publish it to a MQTT broker. The data is generated using the [Faker](https://pypi.org/project/Faker/) library, and then published to a specified topic in the MQTT broker.
 
